@@ -1,9 +1,9 @@
 ---
-import { ViewTransitions } from "astro:transitions";
+import { ViewTransitions } from 'astro:transitions'
 import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro'
 import '../styles/global.css'
-const { pageTitle } = Astro.props;
+const { pageTitle } = Astro.props
 ---
 
 <html lang='es'>
@@ -27,12 +27,11 @@ const { pageTitle } = Astro.props;
 	</head>
 	<body>
 		<Header />
-		<h1 transition:animate="slide">{pageTitle}</h1>
-        <slot />
+		<h1 transition:animate='slide'>{pageTitle}</h1>
+		<slot />
 		<Footer />
 		<script>
 			import '../scripts/menu.js'
 		</script>
 	</body>
-</html>
 </html>

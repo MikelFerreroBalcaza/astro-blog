@@ -6,5 +6,8 @@ const pageTitle = 'Página de inicio'
 
 <BaseLayout pageTitle={pageTitle}>
 	<h2>El impresionante subtítulo de mi blog</h2>
-	<Greeting client:load messages={['Hola', 'Qué tal', 'Hola a todos']} />
+	<Greeting
+		client:load
+		messages={['Hola', 'Qué tal', 'Hola a todos']}
+	/>
 </BaseLayout>
