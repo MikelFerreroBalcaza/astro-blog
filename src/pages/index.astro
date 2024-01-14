@@ -1,7 +1,10 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-const pageTitle = "Página de inicio";
+import BaseLayout from '../layouts/BaseLayout.astro'
+import Greeting from '../components/Greeting.jsx'
+const pageTitle = 'Página de inicio'
 ---
+
 <BaseLayout pageTitle={pageTitle}>
-  <h2>Mi impresionante subtítulo del blog</h2>
+	<h2>El impresionante subtítulo de mi blog</h2>
+	<Greeting client:load messages={['Hola', 'Qué tal', 'Hola a todos']} />
 </BaseLayout>
