@@ -1,8 +1,28 @@
-<body>
-	<a href='/'>Inicio</a>
-	<a href='/about/'>Sobre mi</a>
-	<a href='/blog/'>Blog</a>
+---
+import '../styles/global.css';
+const pageTitle='Mi blog de aprendizaje sobre Astro'
+---
 
-	<h1>Mi blog de Astro aprendizaje</h1>
-	<p>Aquí es donde publicaré sobre mi viaje de aprendizaje Astro.</p>
-</body>
+<html lang='es'>
+	<head>
+		<meta charset='utf-8' />
+		<meta
+			name='viewport'
+			content='width=device-width'
+		/>
+		<title>{pageTitle}</title>
+	</head>
+	<body>
+		<a href='/'>Inicio</a>
+		<a href='/about/'>Sobre mi</a>
+		<a href='/blog/'>Blog</a>
+
+		<h1>{pageTitle}</h1>
+		<p>Aquí es donde publicaré acerca de mi viaje aprendiendo Astro.</p>
+		<ul>
+			<li><a href='/posts/post-1/'>Publicación 1</a></li>
+			<li><a href='/posts/post-2/'>Publicación 2</a></li>
+			<li><a href='/posts/post-3/'>Publicación 3</a></li>
+		</ul>
+	</body>
+</html>
