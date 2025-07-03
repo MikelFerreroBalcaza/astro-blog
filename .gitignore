@@ -15,7 +15,15 @@ pnpm-debug.log*
 
 # environment variables
 .env
+.env*.local
+.env.development
 .env.production
+.env.test
+
+# Exclude .env.example if you want it versioned but want to ensure local .env files are ignored.
+# If .env.example is meant to be a template, it should be committed.
+# If it contains sensitive placeholders that shouldn't even be in the repo, then add it here.
+# For now, assuming .env.example is a safe template.
 
 # macOS-specific files
 .DS_Store
